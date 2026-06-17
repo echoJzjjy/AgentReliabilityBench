@@ -1,0 +1,13 @@
+{
+  "question_title": "Add Two Numbers",
+  "question_content": "Given two integers a and b, return their sum.\n\nConstraints:\n- -1000 <= a, b <= 1000\n- The answer fits in a 32-bit signed integer.\n\nInput Format: two integers a and b separated by whitespace.\nOutput Format: return a single integer.\n\nExample 1:\nInput: 1 2\nOutput: 3\n\nNote: For the edge case a=0 and b=0, return 0.",
+  "platform": "leetcode",
+  "question_id": "lcb_fixture_add",
+  "contest_id": "fixture",
+  "contest_date": "2024-06-01T00:00:00",
+  "starter_code": "def add(a, b):\n    pass",
+  "difficulty": "easy",
+  "public_test_cases": "[{\"input\": \"[1, 2]\", \"output\": \"3\", \"testtype\": \"functional\"}, {\"input\": \"[0, 0]\", \"output\": \"0\", \"testtype\": \"functional\"}]",
+  "private_test_cases": "[{\"input\": \"[10, 20]\", \"output\": \"30\", \"testtype\": \"functional\"}, {\"input\": \"[-5, 7]\", \"output\": \"2\", \"testtype\": \"functional\"}]",
+  "metadata": "{\"func_name\": \"add\"}"
+}

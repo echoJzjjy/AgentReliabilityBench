@@ -1,0 +1,38 @@
+[
+  {
+    "user_id": "sara_doe_1234",
+    "instruction": "You are Sara Doe (94102). You want to cancel reservation RES123456 because your plans changed. Confirm when asked.",
+    "actions": [
+      {"name": "find_user_id_by_name_zip", "arguments": {"first_name": "Sara", "last_name": "Doe", "zip": "94102"}},
+      {"name": "get_reservation_details", "arguments": {"reservation_id": "RES123456"}},
+      {"name": "cancel_reservation", "arguments": {"reservation_id": "RES123456"}}
+    ]
+  },
+  {
+    "user_id": "mike_lee_5678",
+    "instruction": "You are Mike Lee in 10001. You need the details for reservation RES789012 and want to add one checked bag.",
+    "actions": [
+      {"name": "find_user_id_by_name_zip", "arguments": {"first_name": "Mike", "last_name": "Lee", "zip": "10001"}},
+      {"name": "get_reservation_details", "arguments": {"reservation_id": "RES789012"}},
+      {"name": "update_reservation_baggages", "arguments": {"reservation_id": "RES789012", "total_baggages": 2, "nonfree_baggages": 1}}
+    ]
+  },
+  {
+    "user_id": "anna_kim_9012",
+    "instruction": "You are anna_kim_9012 (60601). Search direct flights from ORD to SFO on 2025-06-15 for 2 passengers and book the cheapest option on reservation RES555001.",
+    "actions": [
+      {"name": "get_user_details", "arguments": {"user_id": "anna_kim_9012"}},
+      {"name": "search_direct_flight", "arguments": {"origin": "ORD", "destination": "SFO", "date": "2025-06-15"}},
+      {"name": "book_reservation", "arguments": {"reservation_id": "RES555001", "user_id": "anna_kim_9012"}}
+    ]
+  },
+  {
+    "user_id": "john_smith_3456",
+    "instruction": "You are John Smith (zip 30301). Update reservation RES444333 passenger name spelling to Jonathan Smith after agent confirms.",
+    "actions": [
+      {"name": "find_user_id_by_name_zip", "arguments": {"first_name": "John", "last_name": "Smith", "zip": "30301"}},
+      {"name": "get_reservation_details", "arguments": {"reservation_id": "RES444333"}},
+      {"name": "update_reservation_passengers", "arguments": {"reservation_id": "RES444333", "passengers": [{"first_name": "Jonathan", "last_name": "Smith"}]}}
+    ]
+  }
+]

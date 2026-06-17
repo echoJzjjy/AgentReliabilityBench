@@ -1,0 +1,9 @@
+# Local HF model inference (install into conda env `arb`)
+# CUDA 12.1 wheels — match A800 + driver 535
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch>=2.5.0
+torchvision>=0.20.0
+transformers>=4.44.0
+accelerate>=0.33.0
+safetensors>=0.4.0
+sentencepiece>=0.2.0

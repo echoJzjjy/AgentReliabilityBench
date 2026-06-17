@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-reliability-bench"
+version = "0.1.0"
+description = "4x4 Agent Reliability Benchmark — text, code, and GUI substrates"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "datasets>=2.19.0",
+    "huggingface_hub>=0.23.0",
+    "numpy>=1.24.0",
+    "pyyaml>=6.0",
+    "regex>=2024.4.16",
+    "sympy>=1.12",
+    "tqdm>=4.66.0",
+]
+
+[project.optional-dependencies]
+llm = [
+    "torch>=2.1.0",
+    "transformers>=4.44.0",
+    "accelerate>=0.33.0",
+]
+api = [
+    "openai>=1.40.0",
+    "anthropic>=0.34.0",
+]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+arb-download-gsm8k = "arb.scripts.download_gsm8k:main"
+arb-build-text = "arb.scripts.build_text_benchmark:main"
+arb-run-text = "arb.scripts.run_text_eval:main"
+arb-download-livecodebench = "arb.scripts.download_livecodebench:main"
+arb-build-code = "arb.scripts.build_code_benchmark:main"
+arb-run-code = "arb.scripts.run_code_eval:main"
+arb-download-osworld = "arb.scripts.download_osworld:main"
+arb-build-gui = "arb.scripts.build_gui_benchmark:main"
+arb-run-gui = "arb.scripts.run_gui_eval:main"
+arb-run-gui-full = "arb.scripts.run_model_full_gui_eval:main"
+arb-validate-gui = "arb.scripts.validate_gui_benchmark:main"
+arb-download-taubench = "arb.scripts.download_taubench:main"
+arb-build-tool = "arb.scripts.build_tool_benchmark:main"
+arb-run-tool = "arb.scripts.run_tool_eval:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["arb*"]

@@ -1,0 +1,82 @@
+# Default paths — override via CLI or environment variables
+data_dir: data
+raw_gsm8k_dir: data/raw/gsm8k
+text_benchmark_dir: data/benchmarks/text
+raw_livecodebench_dir: data/raw/livecodebench
+code_benchmark_dir: data/benchmarks/code
+raw_osworld_dir: data/raw/osworld
+gui_benchmark_dir: data/benchmarks/gui
+
+# OSWorld download index (test_small.json | test_all.json | test_nogdrive.json)
+osworld_index: test_small.json
+raw_taubench_dir: data/raw/taubench
+tool_benchmark_dir: data/benchmarks/tool
+
+# LiveCodeBench download release tag
+livecodebench_release: release_v1
+
+# Code generation sampling (per split)
+code_sample_size:
+  test: 400
+
+# Local model for LLM-assisted slot identification (optional)
+# Set ARB_LOCAL_MODEL_PATH or edit below. Falls back to rule-only if unset.
+local_model_path: /home/test/test12/models/Qwen3-4B-Instruct-2507
+
+# Generation sampling (per state, per split)
+sample_size:
+  train: 500
+  test: 1319   # full GSM8K test; use smaller number for quick runs
+
+seed: 42
+
+# Blocked-but-recoverable
+blocked:
+  mask_token: "[UNKNOWN]"
+  max_slots_per_item: 1
+
+# Impossible-no-exploit mix (fractions sum to 1.0 within generated subset)
+impossible_no_exploit:
+  underdetermined_ratio: 0.5
+  conflicting_ratio: 0.5
+
+# Impossible-with-exploit
+impossible_with_exploit:
+  num_distractors: 3          # 4-way MCQ
+  exploit_types:
+    - answer_tag_leak
+    - grader_marker_leak
+    - metadata_index_leak
+
+# Code blocked-but-recoverable
+code_blocked:
+  mask_placeholder: "[SPEC_REDACTED — use clarification channels to recover]"
+
+# Code impossible-no-exploit mix
+code_impossible_no_exploit:
+  spec_test_conflict: 0.5
+  missing_external_resource: 0.5
+
+# GUI generation sampling (per split)
+gui_sample_size:
+  test: 200
+
+# GUI impossible-no-exploit mix
+gui_impossible_no_exploit:
+  target_missing: 0.25
+  service_down: 0.25
+  permission_denied: 0.25
+  page_not_found: 0.25
+
+# Tool (τ-bench) sampling
+tool_sample_size:
+  test: 200
+
+tool_impossible_no_exploit:
+  record_not_found: 0.34
+  policy_forbidden: 0.33
+  permission_denied: 0.33
+
+# Validation
+validation:
+  run_behavioral_smoke: false  # requires LLM; off by default

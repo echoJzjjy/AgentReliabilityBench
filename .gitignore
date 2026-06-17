@@ -1,0 +1,42 @@
+data/
+AuthorKit27/
+__pycache__/
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+results/
+*.summary.json
+*.pyc
+*.pyo
+*.pyd
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local experiment/runtime artifacts
+logs/
+nohup.out
+*.log
+*.aux
+*.bbl
+*.blg
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Generated document binaries and local paper drafts/templates.
+*.pdf
+*.docx
+
+# Local model/checkpoint outputs
+models/
+checkpoints/
+*.safetensors
+*.pt
+*.pth
+*.bin

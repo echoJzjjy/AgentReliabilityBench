@@ -1,0 +1,487 @@
+[
+  {
+    "annotator": 0,
+    "user_id": "yusuf_rossi_9620",
+    "instruction": "You are Yusuf Rossi in 19122. You received your order #W2378156 and wish to exchange the mechanical keyboard for a similar one but with clicky switches and the smart thermostat for one compatible with Google Home instead of Apple HomeKit. If there is no keyboard that is clicky, RGB backlight, full size, you'd go for no backlight. You are detail-oriented and want to make sure everything is addressed in one go.",
+    "actions": [
+      {
+        "name": "find_user_id_by_name_zip",
+        "arguments": {
+          "first_name": "Yusuf",
+          "last_name": "Rossi",
+          "zip": "19122"
+        }
+      },
+      {
+        "name": "get_order_details",
+        "arguments": {
+          "order_id": "#W2378156"
+        }
+      },
+      {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "1656367028"
+        }
+      },
+      {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "4896585277"
+        }
+      },
+      {
+        "name": "exchange_delivered_order_items",
+        "arguments": {
+          "order_id": "#W2378156",
+          "item_ids": [
+            "1151293680",
+            "4983901480"
+          ],
+          "new_item_ids": [
+            "7706410293",
+            "7747408585"
+          ],
+          "payment_method_id": "credit_card_9513926"
+        }
+      }
+    ]
+  },
+  {
+    "annotator": 0,
+    "user_id": "yusuf_rossi_9620",
+    "instruction": "You are Yusuf Rossi in 19122. You want to know how many tshirt options are available in the online store right now. You want to also return the cleaner, headphone, and smart watch.",
+    "actions": [
+      {
+        "name": "find_user_id_by_name_zip",
+        "arguments": {
+          "first_name": "Yusuf",
+          "last_name": "Rossi",
+          "zip": "19122"
+        }
+      },
+      {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "6086499569"
+        }
+      },
+      {
+        "name": "list_all_product_types",
+        "arguments": {}
+      },
+      {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "9523456873"
+        }
+      },
+      {
+        "name": "get_user_details",
+        "arguments": {
+          "user_id": "yusuf_rossi_9620"
+        }
+      },
+      {
+        "name": "get_order_details",
+        "arguments": {
+          "order_id": "#W6247578"
+        }
+      },
+      {
+        "name": "get_order_details",
+        "arguments": {
+          "order_id": "#W9711842"
+        }
+      },
+      {
+        "name": "get_order_details",
+        "arguments": {
+          "order_id": "#W4776164"
+        }
+      },
+      {
+        "name": "get_order_details",
+        "arguments": {
+          "order_id": "#W6679257"
+        }
+      },
+      {
+        "name": "get_order_details",
+        "arguments": {
+          "order_id": "#W2378156"
+        }
+      },
+      {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "9523456873"
+        }
+      },
+      {
+        "name": "return_delivered_order_items",
+        "arguments": {
+          "order_id": "#W2378156",
+          "item_ids": [
+            "4602305039",
+            "4202497723",
+            "9408160950"
+          ],
+          "payment_method_id": "credit_card_9513926"
+        }
+      }
+    ],
+    "outputs": [
+      "10"
+    ]
+  },
+  {
+    "annotator": 0,
+    "user_id": "mei_kovacs_8020",
+    "instruction": "You are mei_kovacs_8020 (28236) and you want to exchange the water bottle and the desk lamp. You want to exchange the water bottle to a bigger one, and the desk lamp to a less bright one (prefer battery > USB > AC). If the agent asks for confirmation, only exchange the desk lamp. If the agent asks for confirmation again, do not exchange anything, and return the water bottle instead.",
+    "actions": [
+      {
+        "name": "find_user_id_by_name_zip",
+        "arguments": {
+          "first_name": "Mei",
+          "last_name": "Kovacs",
+          "zip": "28236"
+        }
+      },
+      {
+        "name": "get_user_details",
+        "arguments": {
+          "user_id": "mei_kovacs_8020"
+        }
+      },
+      {
+        "name": "get_order_details",
+        "arguments": {
+          "order_id": "#W6390527"
+        }
+      },
+      {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "6817146515"
+        }
+      },
+      {
+        "name": "return_delivered_order_items",
+        "arguments": {
+          "order_id": "#W6390527",
+          "item_ids": [
+            "8538875209"
+          ],
+          "payment_method_id": "paypal_7644869"
+        }
+      }
+    ]
+  },
+  {
+    "annotator": 0,
+    "user_id": "mei_kovacs_8020",
+    "instruction": "You are mei_kovacs_8020 (28236) and you want to exchange the water bottle and the desk lamp. You want to exchange the water bottle to a bigger one, and the desk lamp to a less bright one (prefer battery > USB > AC). If the agent asks for confirmation, only exchange the desk lamp.",
+    "actions": [
+      {
+        "name": "find_user_id_by_name_zip",
+        "arguments": {
+          "first_name": "Mei",
+          "last_name": "Kovacs",
+          "zip": "28236"
+        }
+      },
+      {
+        "name": "get_user_details",
+        "arguments": {
+          "user_id": "mei_kovacs_8020"
+        }
+      },
+      {
+        "name": "get_order_details",
+        "arguments": {
+          "order_id": "#W6390527"
+        }
+      },
+      {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "8310926033"
+        }
+      },
+      {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "6817146515"
+        }
+      },
+      {
+        "name": "exchange_delivered_order_items",
+        "arguments": {
+          "order_id": "#W6390527",
+          "item_ids": [
+            "8384507844"
+          ],
+          "new_item_ids": [
+            "7453605304"
+          ],
+          "payment_method_id": "paypal_7644869"
+        }
+      }
+    ]
+  },
+  {
+    "annotator": 0,
+    "user_id": "mia_garcia_4516",
+    "instruction": "You are mia_garcia_4516 (mia.garcia2723@example.com). For some reason, you want to return all things ordered. You have two payment methods and two orders, and you want to refund each order to the opposite order's payment method. If not possible, you are angry and swear for a few times, then asks for human representative. You are a mysterious person and do not want to reveal much about yourself or speak too many words at the same time.",
+    "actions": [
+      {
+        "name": "find_user_id_by_email",
+        "arguments": {
+          "email": "mia.garcia2723@example.com"
+        }
+      },
+      {
+        "name": "get_user_details",
+        "arguments": {
+          "user_id": "mia_garcia_4516"
+        }
+      },
+      {
+        "name": "get_order_details",
+        "arguments": {
+          "order_id": "#W5490111"
+        }
+      },
+      {
+        "name": "get_order_details",
+        "arguments": {
+          "order_id": "#W7387996"
+        }
+      },
+      {
+        "name": "transfer_to_human_agents",
+        "arguments": {
+          "summary": "The user wants to refund each order to the opposite order's payment method, but the agent cannot help."
+        }
+      }
+    ]
+  },
+  {
+    "annotator": 0,
+    "user_id": "ethan_garcia_1261",
+    "instruction": "You are Ethan Garcia, and you live in Denver, 80280. You just won a lottery, and you want to upgrade all your items to the most expensive options (but make sure the shoe is still the same size). You want to pay the difference with your GC, but if it is impossible, PayPal is fine. You are a mysterious person and do not want to reveal much about yourself.",
+    "actions": [
+      {
+        "name": "find_user_id_by_name_zip",
+        "arguments": {
+          "first_name": "Ethan",
+          "last_name": "Garcia",
+          "zip": "80280"
+        }
+      },
+      {
+        "name": "get_user_details",
+        "arguments": {
+          "user_id": "ethan_garcia_1261"
+        }
+      },
+      {
+        "name": "get_order_details",
+        "arguments": {
+          "order_id": "#W4967593"
+        }
+      },
+      {
+        "name": "get_order_details",
+        "arguments": {
+          "order_id": "#W9911714"
+        }
+      },
+      {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "8310926033"
+        }
+      },
+      {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "1656367028"
+        }
+      },
+      {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "6938111410"
+        }
+      },
+      {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "5149340237"
+        }
+      },
+      {
+        "name": "modify_pending_order_items",
+        "arguments": {
+          "order_id": "#W9911714",
+          "item_ids": [
+            "2366567022",
+            "1340995114",
+            "9791469541",
+            "1763705424"
+          ],
+          "new_item_ids": [
+            "4579334072",
+            "1151293680",
+            "4107812777",
+            "2882812427"
+          ],
+          "payment_method_id": "gift_card_4332117"
+        }
+      },
+      {
+        "name": "get_order_details",
+        "arguments": {
+          "order_id": "#W5733668"
+        }
+      }
+    ]
+  },
+  {
+    "annotator": 0,
+    "user_id": "isabella_lopez_6490",
+    "instruction": "You are Isabella Lopez, and your email address is isabella.lopez3271@example.com. You want to know how much balance does your gift card have. Also, for your recent order, whether you used your visa, mastercard, or amex credit card. You also wonder if you can apply the gift card balance to the order. If not, you want to change your payment method to visa, because the other two cards have a lot of balance. You are a yound college student under the pressure of final exams and student loans, so you are a bit anxious and want to get things done quickly.",
+    "actions": [
+      {
+        "name": "find_user_id_by_email",
+        "arguments": {
+          "email": "isabella.lopez3271@example.com"
+        }
+      },
+      {
+        "name": "get_user_details",
+        "arguments": {
+          "user_id": "isabella_lopez_6490"
+        }
+      },
+      {
+        "name": "get_order_details",
+        "arguments": {
+          "order_id": "#W4923227"
+        }
+      },
+      {
+        "name": "modify_pending_order_payment",
+        "arguments": {
+          "order_id": "#W4923227",
+          "payment_method_id": "credit_card_8897086"
+        }
+      }
+    ],
+    "outputs": [
+      "60",
+      "mastercard"
+    ]
+  },
+  {
+    "annotator": 2,
+    "user_id": "chen_johnson_4204",
+    "instruction": "You are Chen Johnson from Houston TX, 77004. You want to change your wireless earbuds in order W5061109 to a blue colored one. Provide all details upfront in your very first message and ask the agent to resolve as soon as possible. You want the price to be the same or lower, which you want the agent to verify explicitly. If and only if the agent provides several options, you want the option without water resistance.",
+    "actions": [
+      {
+        "name": "find_user_id_by_name_zip",
+        "arguments": {
+          "first_name": "Chen",
+          "last_name": "Johnson",
+          "zip": "77004"
+        }
+      },
+      {
+        "name": "get_order_details",
+        "arguments": {
+          "order_id": "#W5061109"
+        }
+      },
+      {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "9924732112"
+        }
+      },
+      {
+        "name": "modify_pending_order_items",
+        "arguments": {
+          "order_id": "#W5061109",
+          "item_ids": [
+            "3694871183"
+          ],
+          "new_item_ids": [
+            "6077640618"
+          ],
+          "payment_method_id": "paypal_3742148"
+        }
+      }
+    ],
+    "outputs": [
+      "242.92"
+    ]
+  },
+  {
+    "user_id": "amelia_gonzalez_4098",
+    "synthetic_instruction": "You name is Amelia Gonzalez and your email is amelia.gonzalez4271@example.com. You are rigid, curious, patient, outgoing. For #W7209932, exchange T-Shirt {'color': 'blue', 'size': 'S', 'material': 'polyester', 'style': 'v-neck'} to {'color': 'red', 'size': 'XXL', 'material': 'cotton', 'style': 'crew neck'}; ",
+    "actions": [
+      {
+        "name": "exchange_delivered_order_items",
+        "arguments": {
+          "order_id": "#W7209932",
+          "item_ids": [
+            "5047954489"
+          ],
+          "new_item_ids": [
+            "9354168549"
+          ],
+          "payment_method_id": "gift_card_2611937"
+        }
+      }
+    ],
+    "instruction": "You name is Amelia Gonzalez and your email is amelia.gonzalez4271@example.com. You are curious, patient, outgoing. For #W7209932, exchange T-Shirt {'color': 'blue', 'size': 'S', 'material': 'polyester', 'style': 'v-neck'} to {'color': 'red', 'size': 'XXL', 'material': 'cotton', 'style': 'crew neck'}; Use the gift card. Try to make the conversation as confusing for the agent as possible.",
+    "annotator": 4
+  },
+  {
+    "user_id": "sofia_li_9219",
+    "actions": [
+      {
+        "name": "exchange_delivered_order_items",
+        "arguments": {
+          "order_id": "#W4689314",
+          "item_ids": [
+            "5996159312"
+          ],
+          "new_item_ids": [
+            "8363011723"
+          ],
+          "payment_method_id": "credit_card_3951670"
+        }
+      },
+      {
+        "name": "exchange_delivered_order_items",
+        "arguments": {
+          "order_id": "#W3916020",
+          "item_ids": [
+            "7758198585",
+            "4068787148"
+          ],
+          "new_item_ids": [
+            "5606522780",
+            "5546244844"
+          ],
+          "payment_method_id": "credit_card_3951670"
+        }
+      }
+    ],
+    "instruction": "You name is Sofia Li and your zip code is 78260. You are outgoing, organized, cautious, pessimistic. You want to exchange your Bicycle to a larger frame size for your kid. Jigsaw Puzzle in the same order also needs to be exchanged, you want the same difficulty, but 1000 more pieces, and you prefer art than animal theme if both are available. Make sure you mention these at the same time. You also want to exchange your camera to a slightly lower resolution, without changing the other options. For both orders, you'd prefer the visa card as payment or refund method. Lastly, you want to cancel the skateboard order. If you cannot cancel one single item, you are okay with cancelling the whole order, but you will do it yourself on the website and no need for the agent to help.",
+    "annotator": 4
+  }
+]
